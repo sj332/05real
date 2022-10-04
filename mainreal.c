@@ -4,24 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int answer=59;
+	int sum=0;
 	int x;
-	int trial =0;
+	int i;
 	
-	do {
-	// 입력해라 문구 출력
-	trial++;
-	printf("Guess a number: ");
-	scanf("%i",&x);
+	printf("정수를 입력하시오.");
+	scanf("%d",&x);
 	
-	if (x<answer)
-		printf("low!");
-	else if(x>answer)
-		printf("high!");	
-	}
-	while (answer!=x);
-	
-	printf("Congratulation! Number of trial=%i\n",trial);
-			
+	for (i=0; i<=x; i++)
+		sum=sum+i;
+		
+	printf("더하기 결과는 %i입니다.\n",sum);
 
 }
