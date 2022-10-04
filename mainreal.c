@@ -10,11 +10,11 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&x);
 	
 	if (x>0) //양수인 경우 
-		printf("절댓값은 %d입니다.",x);
+		printf("양수입니다.");
 	else if (x==0) //0인 경우 
-		printf("절댓값은 0입니다.");
+		printf("0입니다.");
 	else //음수인 경우 
-		printf("절댓값은 %d입니다.",-x);
-
+		printf("음수입니다.");
+		 
 	return 0;
 }
